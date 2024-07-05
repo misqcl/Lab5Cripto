@@ -45,9 +45,9 @@ ssh prueba@ip_S1
 ![29](imagenes/algos1.PNG?raw=true "Title")
 ![30](imagenes/replica%20entrar.PNG?raw=true "Title")
 ![31](imagenes/replicIP.PNG?raw=true "Title") 
-![36](imagenes/2.PNG?raw=true "Title")
+![36](imagenes/2.png?raw=true "Title")
 ### Imágenes que tomé pero se me olvidó poner
-![32](imagenes/compose.png?raw=true "Title")
+![32](imagenes/compose.PNG?raw=true "Title")
 ![33](imagenes/conexiones.PNG?raw=true "Title") 
 ![34](imagenes/cont1.PNG?raw=true "Title")
 ![35](imagenes/hash1.PNG?raw=true "Title") 
