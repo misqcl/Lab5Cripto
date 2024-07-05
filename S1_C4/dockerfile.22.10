@@ -1,0 +1,14 @@
+FROM ubuntu:22.10
+
+RUN sed -i 's|http://archive.ubuntu.com/ubuntu/|http://old-releases.ubuntu.com/ubuntu/|g' /etc/apt/sources.list && \
+    sed -i 's|http://security.ubuntu.com/ubuntu/|http://old-releases.ubuntu.com/ubuntu/|g' /etc/apt/sources.list
+    
+RUN apt-get update && apt-get install -y openssh-client openssh-server
+
+RUN useradd -m -p $(openssl passwd -1 prueba) prueba
+
+RUN mkdir /home/prueba/.ssh && \
+	chown -R prueba:prueba /home/prueba/.ssh && \
+	echo 'PasswordAuthentication yes' >> /etc/ssh/ssh_config && \
+	echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config && \
+	service ssh restart
