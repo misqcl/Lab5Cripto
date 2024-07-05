@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  replica:
+    container_name: replica
+    image: ubuntu-20.10
+    command: /bin/bash -c "while true; do sleep 3600; done"
+
